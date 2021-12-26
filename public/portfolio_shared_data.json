@@ -1,7 +1,7 @@
 {
     "basic_info": {
-      "name": "Ursula Lopez",
-      "titles": [ "Software Developer" ],
+      "name": "Jared Berkowitz",
+      "titles": [ "Full Stack Web Developer and Software Developer" ],
       "social": [
         {
           "name": "github",
@@ -9,9 +9,9 @@
           "class": "fab fa-github"
         },
         {
-          "name": "instagram",
-          "url": "https://www.instagram.com",
-          "class": "fab fa-instagram"
+          "name": "linkedin",
+          "url": "https://linkedin.com",
+          "class": "fab fa-linkedin-in"
         }
       ],
       "image": "myProfile.jpg"
@@ -29,13 +29,13 @@
           "level": "95"
         },
         {
-          "name": "Angular",
-          "class": "devicon-angularjs-plain",
+          "name": "Node.js",
+          "class": "devicon-nodejs-plain",
           "level": "80"
         },
         {
-          "name": "TypeScript",
-          "class": "devicon-typescript-plain",
+          "name": "JQuery",
+          "class": "devicon-jquery-plain",
           "level": "90"
         },
         {
