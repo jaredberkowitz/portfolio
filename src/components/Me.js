@@ -73,7 +73,7 @@ class About extends Component {
                         </div>
                         </div>    
     
-                        <ul className="col-md-6 mt-5 ">
+                        <ul className="col-md-6 sm-4 mt-5 ">
                                 <li className="d-flex align-items-center"><i class="fas fa-gift display-4 text-success mr-3"style={{ fontSize: '24px' }}  ></i><span className={"text-success"}><h3>Birthday:   </h3></span><span><h3 className="ml-3"> 06.03.1996</h3></span></li>
                                 <li className="d-flex align-items-center"><i class="fas fa-map-marker-alt display-4 text-success mr-3"style={{ fontSize: '24px' }}  ></i><span className={"text-success"}><h3>Location:   </h3></span><span><h3 className="ml-3"> Long Island, New York</h3></span></li>
                                 <li className="d-flex align-items-center"><i class="fas fa-book-open display-4 text-success mr-3"style={{ fontSize: '24px' }}  ></i> <span className={"text-success"}><h3>Study:   </h3></span><span><h3 className="ml-3 text-align"> Computer Programming and Information Systems</h3></span></li>
@@ -82,7 +82,7 @@ class About extends Component {
                                 <li className="d-flex align-items-center"><i class="fas fa-gift display-4 text-success mr-3"style={{ fontSize: '24px' }}  ></i> <span className={"text-success"}><h3>Email:   </h3></span><span><h3 className="ml-3"> jaredberkowitz2@gmail.com</h3></span></li>
                                 
                                 <li className="d-flex align-items-center mt-5" >
-                                    <div className="box col-md-6 col-sm-4"><Button variant="success" size="xl" active className="btn" style={{fontSize: '24px'}}>Download CV</Button></div>
+                                    <div className="box col-md-6 col-sm-6"><Button variant="success" size="xl" active className="btn" style={{fontSize: '24px'}}>Download CV</Button></div>
                                     <div className="box col-md-6 col-sm-4 ml-5"><Button variant="success" size="xl" active className="btn" style={{fontSize: '24px'}}>Contact</Button></div>
                                 </li>
                         </ul>  
