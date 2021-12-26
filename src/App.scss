@@ -470,6 +470,8 @@ footer a:focus {
 }
 .btn {
 	white-space: normal !important;
+	word-wrap: break-word; 
+    word-break: normal;
 	color: #FFF;
 	transition: all 0.5s;
 	position: relative;

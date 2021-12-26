@@ -21,14 +21,14 @@ class About extends Component {
 
     return (
       <section id="about">
-        <div className="col-md-11">
+        <div className="col-md-12">
           <h1 style={{ color: "black" }}>
             <span>{sectionName}</span>
           </h1>
           <div className="row center mx-auto mb-5">
    
 
-            <div className="col-md-11 center ">
+            <div className=" center ">
               <div className="col-md-10">
                 <div className="card ">
                   <div className="card-header">
@@ -73,7 +73,7 @@ class About extends Component {
                         </div>
                         </div>    
     
-                        <ul className="col-md-6 sm-4 mt-5 ">
+                        <ul className="col-md-6 col-sm-4  mt-5 ">
                                 <li className="d-flex align-items-center"><i class="fas fa-gift display-4 text-success mr-3"style={{ fontSize: '24px' }}  ></i><span className={"text-success"}><h3>Birthday:   </h3></span><span><h3 className="ml-3"> 06.03.1996</h3></span></li>
                                 <li className="d-flex align-items-center"><i class="fas fa-map-marker-alt display-4 text-success mr-3"style={{ fontSize: '24px' }}  ></i><span className={"text-success"}><h3>Location:   </h3></span><span><h3 className="ml-3"> Long Island, New York</h3></span></li>
                                 <li className="d-flex align-items-center"><i class="fas fa-book-open display-4 text-success mr-3"style={{ fontSize: '24px' }}  ></i> <span className={"text-success"}><h3>Study:   </h3></span><span><h3 className="ml-3 text-align"> Computer Programming and Information Systems</h3></span></li>
