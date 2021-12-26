@@ -83,7 +83,7 @@ class About extends Component {
                                 
                                 <li className="d-flex align-items-center mt-5" >
                                     <div className="box col-md-4 col-sm-4"><Button variant="success" size="xl" active className="btn" style={{fontSize: '24px'}}>Download CV</Button></div>
-                                    <div className="box col-md-4 col-sm-4 ml-5"><Button variant="success" size="xl" active className="btn" style={{fontSize: '24px'}}>Contact Me</Button></div>
+                                    <div className="box col-md-4 col-sm-4 ml-5"><Button variant="success" size="xl" active className="btn" style={{fontSize: '24px'}}>Contact</Button></div>
                                 </li>
                         </ul>  
 
