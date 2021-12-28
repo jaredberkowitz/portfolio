@@ -4,45 +4,53 @@ import { Icon } from "@iconify/react";
 import angularIcon from "@iconify/icons-logos/angular-icon";
 import reactIcon from "@iconify/icons-logos/react";
 import vueIcon from "@iconify/icons-logos/vue";
+import emailjs from 'emailjs-com';
+import { init } from 'emailjs-com';
+import { send } from 'emailjs-com';
+init('user_TxSDTfNbWa5B29DEHpjkC');
+
 
 const Contact = () => {
 
-
+    const [toSend, setToSend] = useState({
+        name: '',
+        subject: '',
+        message: '',
+        reply_to: '',
+      });
     
-        
-    const [name, setName] = useState('');
-    const [email, setEmail] = useState('');
-    const [message, setMessage] = useState('');
-    const [emailSent, setEmailSent] = useState(false);
+      const handleChange = (e) => {
+        setToSend({ ...toSend, [e.target.name]: e.target.value });
+      };
 
-    const submit = () => {
-        if (name && email && message) {
-           // TODO - send mail
-    
-            setName('');
-            setEmail('');
-            setMessage('');
-            setEmailSent(true);
-        } else {
-            alert('Please fill in all fields.');
-        }
-    }
+      const onSubmit = (e) => {
+        e.preventDefault();
+        send(
+          'service_vmolzkk',
+          'template_smxl95l',
+          toSend,
+          'user_TxSDTfNbWa5B29DEHpjkC'
+        )
+          .then((response) => {
+            console.log('SUCCESS!', response.status, response.text);
+            alert('Thank you for the message');
+          })
+          .catch((err) => {
+            console.log('FAILED...', err);
+          });
+      };
 
-    const isValidEmail = email => {
-        const regex = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
-        return regex.test(String(email).toLowerCase());
-    };
+
 
 
         return (
           <section id="about">
             <div className="col-md-12">
               <h1 style={{ color: "black" }}>
-                <span>{}</span>
+                <span>{}Contact Me</span>
               </h1>
               <div className="row center mx-auto mb-5">
-                <div className="col-md-8 center">
-                  <div className="col-md-10">
+                  <div className="col-md-12">
                     <div className="card">
                       <div className="card-header">
                         <span
@@ -64,29 +72,55 @@ const Contact = () => {
                         ></span>
                       </div>
                       <div
-                        className="card-body font-trebuchet text-justify ml-3 mr-3"
+                        className="card-body font-trebuchet text-justify ml-3 mr-3 mb-5 center"
                         style={{
-                          height: "auto",
                           fontSize: "132%",
-                          lineHeight: "200%",
                         }}
                       >
                         <br />
-                        <form id="contact-form" onSubmit="" method="POST">
-                            <div className="form-group">
-                                <label htmlFor="name">Name</label>
-                                <input type="text" className="form-control" value={name} onChange={e => setName(e.target.value)} />
+                        <form onSubmit={onSubmit}>
+                            <div class="col-6 form-group">
+                            <input
+                                type='text'
+                                name='name'
+                                placeholder='Your name'
+                                value={toSend.name}
+                                onChange={handleChange}
+                            />
                             </div>
-                            <div className="form-group">
-                                <label htmlFor="exampleInputEmail1">Email address</label>
-                                <input type="email" className="form-control" aria-describedby="emailHelp" value={email} onChange={e => setEmail(e.target.value)}  />
+                            <div class="col-6 form-group">
+                            <input
+                                type='text'
+                                name='reply_to'
+                                placeholder='Your email'
+                                value={toSend.reply_to}
+                                onChange={handleChange}
+                            />
                             </div>
-                            <div className="form-group">
-                                <label htmlFor="message">Message</label>
-                                <textarea className="form-control" rows="5" value={message} onChange={e => setMessage(e.target.value)}></textarea>
+                            <div class="col-12 form-group ">
+                            <input
+                                type='text'
+                                name='subject'
+                                placeholder='Subject'
+                                value={toSend.subject}
+                                onChange={handleChange}    
+                            />
                             </div>
-                            <button type="submit" className="btn btn-primary" onClick={submit}>Submit</button>
-                        </form>
+                            <div class="col-12 col-xs-4 form-group form-group-lg">
+                            <textarea
+                                type='text'
+                                name='message'
+                                placeholder='Your message'
+                                value={toSend.message}
+                                onChange={handleChange}
+                                style={{paddingBottom: "8px", overflow: "auto", width:"100%", height:"100%"}} 
+                                class="input-lg form-control-lg mb-2"
+                                
+                            />
+                            </div>
+
+                            <button type='submit' className="contactBtn center ml-4">Send Message</button>
+                            </form>
                         <br />
                         <br />
                         {}
@@ -95,7 +129,6 @@ const Contact = () => {
                   </div>
                 </div>
               </div>
-            </div>
           </section>
         );
       }

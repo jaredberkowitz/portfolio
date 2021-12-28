@@ -23,7 +23,7 @@ class AboutSite extends Component {
     
         return (
             <section id="services" class="services">
-            <div class="container" data-aos="fade-up">
+            <div class="container mb-5" data-aos="fade-up">
       
             
               <div class="section-title" style={{color:"black"}}>
