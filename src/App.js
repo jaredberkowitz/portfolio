@@ -6,8 +6,7 @@ import Header from "./components/Header";
 import Footer from "./components/Footer";
 import About from "./components/About";
 import Home from "./components/Home";
-import Me from "./components/Me";
-
+import Contact from "./components/Contact";
 
 class App extends Component {
 
@@ -97,14 +96,22 @@ class App extends Component {
               sharedBasicInfo={this.state.sharedData.basic_info}
             />
           </Route>
+          <Route exact path="/contact">
+          <Contact>
+              resumeBasicInfo={this.state.resumeData.basic_info}
+              sharedBasicInfo={this.state.sharedData.basic_info}
+          </Contact>
+          </Route>
         </Switch>
         <Footer 
           sharedBasicInfo={this.state.sharedData.basic_info}
           applyPickedLanguage={this.applyPickedLanguage} 
         />  
       </Router>
+
     );
   }
 }
+
 
 export default App;

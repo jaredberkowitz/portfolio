@@ -6,7 +6,7 @@ import vueIcon from "@iconify/icons-logos/vue";
 import { Button } from "react-bootstrap"
 
 
-class About extends Component {
+class Me extends Component {
   render() {
     if (this.props.sharedBasicInfo) {
       var profilepic = "images/" + this.props.sharedBasicInfo.image;
@@ -103,4 +103,4 @@ class About extends Component {
   }
 }
 
-export default About;
+export default Me;
