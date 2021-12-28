@@ -79,8 +79,8 @@ class AboutSite extends Component {
                       </svg>
                       <i class="fas fa-layer-group"></i>
                     </div>
-                    <h4><a href="">Bootstrap</a></h4>
-                    <p>Although React does not initially include Bootstrap, the React-Boostrap library has been implemented to design this portfolio with a mobile-first approach. </p>
+                    <h4><a href="">Github Integration</a></h4>
+                    <p>This portfolio has seamless Github integration. Whenever the Github repository is updated, the site automatically updates with it! </p>
                   </div>
                 </div>
       
