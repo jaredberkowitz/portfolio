@@ -403,7 +403,7 @@ header h1 {
 	font-size: 1.5rem;
 }
 
-@media (min-width: 576px) {
+@media (min-width: 544px) {
 	.portfolio .closeButtonResponsive {
 		display: block;
 	}
@@ -476,51 +476,6 @@ footer a:focus {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-}
-.btn {
-	white-space: normal !important;
-	word-wrap: break-word; 
-    word-break: normal;
-	color: #FFF;
-	transition: all 0.5s;
-	position: relative;
-	line-height: 50px;
-	height: 50px;
-	text-align: center;
-	width: 250px;
-	cursor: pointer;
-}
-.btn::before {
-	content: '';
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 100%;
-	z-index: 1;
-	background-color: rgba(255,255,255,0.1);
-	transition: all 0.3s;
-}
-.btn:hover::before {
-	opacity: 0 ;
-	transform: scale(0.5,0.5);
-}
-.btn::after {
-	content: '';
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 100%;
-	z-index: 1;
-	opacity: 0;
-	transition: all 0.3s;
-	border: 1px solid rgba(255,255,255,0.5);
-	transform: scale(1.2,1.2);
-}
-.btn:hover::after {
-	opacity: 1;
-	transform: scale(1,1);
 }
 
 #aboutSite {
@@ -665,3 +620,80 @@ footer a:focus {
 	  padding-bottom: 8px;
 	  padding: 10px 12px;
   }
+
+  .text-responsive {
+	font-size: calc(100% + 1vw + 1vh);
+  }
+
+  
+@mixin btn-border-drawing($color: #ccc, $hover: black, $width: 2px, $vertical: top, $horizontal: left, $duration: 0.25s) {
+	box-shadow: inset 0 0 0 $width $color;
+	color: $color;
+	transition: color $duration $duration/3;
+	position: relative;
+	
+	&::before,
+	&::after {
+	  border: 0 solid transparent;
+	  box-sizing: border-box;
+	  content: '';
+	  pointer-events: none;
+	  position: absolute;
+	  width: 0; height: 0;
+	  
+	  #{$vertical}: 0; 
+	  #{$horizontal}: 0;
+	}
+  
+	&::before {
+	  $h-side: if($horizontal == 'left', 'right', 'left');
+	  
+	  border-#{$vertical}-width: $width;
+	  border-#{$h-side}-width: $width;
+	}
+	
+	&::after {
+	  $v-side: if($vertical == 'top', 'bottom', 'top');
+	  
+	  border-#{$v-side}-width: $width;
+	  border-#{$horizontal}-width: $width;
+	}
+	
+	&:hover {
+	  color: $hover;
+	  
+	  &::before,
+	  &::after {
+		border-color: $hover;
+		transition: border-color 0s, width $duration, height $duration;
+		width: 100%;
+		height: 100%;
+	  }
+	  
+	  &::before { transition-delay: 0s, 0s, $duration; }
+	  
+	  &::after { transition-delay: 0s, $duration, 0s; }
+	}
+  }
+  
+  .draw-border {
+	@include btn-border-drawing(#4cad51, #7ae076f1, 4px, bottom, right);
+  }
+  
+  //=== Button styling, semi-ignore
+  .btn {
+	background-color: #1f1a25;
+	border: none;
+	cursor: pointer;
+	line-height: 1.5;
+	padding: 1em 2em;
+	letter-spacing: 0.05rem;
+
+	
+	&:focus { outline: 2px dotted #55d7dc; }
+  }
+  
+  .btn:hover {
+	color: #4c9aad;
+  }
+  
