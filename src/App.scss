@@ -53,9 +53,33 @@ header .nav {
 	letter-spacing: 5px;
 	
 }
-.nav {
-	color:#353239;
+
+
+
+.nav-link {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	font-family: "Poppins", sans-serif;
+	color: #fff;
+	font-size: 15px;
+	font-weight: 800;
+	text-transform: uppercase;
+	margin: 0 10px;
+	white-space: nowrap;
+	transition: 0.3s;
+	letter-spacing: 0.4px;
+	position: relative;
+	background: #45505b;
+	padding: 0 5px 0 7px;
+	border-radius: 50px;
 }
+
+.nav-link:hover{
+	color: #11dbcf;
+}
+
+
 
 .github-corner:hover .octo-arm {
 	animation:octocat-wave 560ms ease-in-out

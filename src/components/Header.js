@@ -45,22 +45,22 @@ class Header extends Component {
           </svg>
         </a>
         <Nav activeKey="/home" fill style={{ position: 'absolute', top: 10, right: 10 }}>
-          <Nav.Item> 
+          <Nav.Item className="mr-3"> 
             <LinkContainer to="/">
-              <Nav.Link href="/">Home</Nav.Link>
+              <Nav.Link href="/" ><i class="icon fas fa-home mr-1"style={{ fontSize: '24px'}}  ></i>Home</Nav.Link>
             </LinkContainer>
           </Nav.Item>
-          <Nav.Item>        
+          <Nav.Item className="mr-3">        
             <LinkContainer to="/about">
-              <Nav.Link eventKey="about">About</Nav.Link>
+              <Nav.Link eventKey="about"><i class="icon far fa-address-card mr-1"style={{ fontSize: '24px'}}  ></i>About</Nav.Link>
             </LinkContainer>
           </Nav.Item>
-          <Nav.Item>        
+          <Nav.Item className="mr-3">        
             <LinkContainer to="/contact">
-              <Nav.Link eventKey="contact">Contact</Nav.Link>
+              <Nav.Link eventKey="contact"><i class="icon far fa-envelope mr-1"style={{ fontSize: '24px'}}  ></i>Contact</Nav.Link>
             </LinkContainer>
           </Nav.Item>
-          <Nav.Item>
+          <Nav.Item >
             <Switch 
               checked={this.state.checked}
               onChange={this.onThemeSwitchChange}
@@ -103,6 +103,7 @@ class Header extends Component {
             />
           </Nav.Item>
         </Nav>
+        <div class="dot"></div>
         <div className="row aligner" style={{height: '100%'}}>
           <div className="col-md-12">
             <div>
