@@ -58,7 +58,7 @@ class Me extends Component {
 
                         <div className="col-md-5 mt-5 ml-5">
                         <div className="profileStyling">
-                            <span style={{ cursor: "auto", maxWidth:"100%", height:"auto"}}>
+                            <span style={{ cursor: "auto",  height:"auto"}}>
                             <img
                                 height="250px"
                                 src={profilepic}
