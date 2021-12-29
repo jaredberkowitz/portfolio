@@ -69,7 +69,7 @@ class Me extends Component {
                         </div>
                         </div>    
     
-                        <ul className="mt-5 col-md-6 col-sm-5">
+                        <ul className="mt-5 col-md-6 col-sm-5 col-xs-4 ">
                                 <li className="d-flex align-items-center"><i class="fas fa-gift display-4 text-success mr-3"style={{ fontSize: '24px' }}  ></i><span className={"text-success"}><h3>Birthday:   </h3></span><span><h3 className="ml-3"> 06.03.1996</h3></span></li>
                                 <li className="d-flex align-items-center"><i class="fas fa-map-marker-alt display-4 text-success mr-3"style={{ fontSize: '24px' }}  ></i><span className={"text-success"}><h3>Location:   </h3></span><span><h3 className="ml-3"> Long Island, New York</h3></span></li>
                                 <li className="d-flex align-items-center"><i class="fas fa-book-open display-4 text-success mr-3"style={{ fontSize: '24px' }}  ></i> <span className={"text-success"}><h3>Study:   </h3></span><span><h3 className="ml-3 text-align"> Computer Programming and Information Systems</h3></span></li>
