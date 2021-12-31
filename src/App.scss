@@ -721,3 +721,25 @@ footer a:focus {
 	color: #4c9aad;
   }
   
+
+  //Me Card
+
+  .meCard {
+	display: inline-block;
+	margin: 0 auto 5% auto;
+	text-align: center;
+	text-decoration: none;
+	-webkit-box-shadow: 0 4px 6px rgba(0, 0, 0, .3);
+	-moz-box-shadow: 0 4px 6px rgba(0, 0, 0, .3);
+	box-shadow: 0 4px 6px rgba(0, 0, 0, .3);
+	-webkit-transition: all .20s linear;
+	-moz-transition: all .20s linear;
+	transition: all .20s linear;
+	z-index: 0;
+	position: relative;
+}
+
+.meCard .card-header {
+
+}
+

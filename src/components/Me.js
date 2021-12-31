@@ -26,8 +26,8 @@ class Me extends Component {
             <span>{sectionName}</span>
           </h1>
           <div className="row center mx-auto mb-5">
-            <div className="col-md-12 col-sm-12  mb-5 center">
-                <div className="card ">
+            <div className="col-md-12 col-sm-12 mx-auto mb-5 center">
+                <div className="card meCard">
                   <div className="card-header">
                     <span
                       className="iconify"
@@ -48,7 +48,7 @@ class Me extends Component {
                     ></span>
                   </div>
                   <div
-                    className="card-body font-trebuchet d-flex text-justify ml-3 mr-3 "
+                    className=" card-body font-trebuchet d-flex text-justify ml-5 mr-5 "
                     style={{
                       height: "auto",
                       fontSize: "1.4rem",
@@ -57,13 +57,14 @@ class Me extends Component {
                   >
                     <br />
 
-                        <div className="col-md-6 col-sm-6 mt-5 ml-1 d-block">
+                        <div className="col-md-5 col-sm-6 mt-5 ml-1 d-block">
                         <div className="profileStyling">
                             <span style={{ cursor: "auto",  height:"auto"}}>
                             <img
-                                height="250px"
+                                height="230px"
                                 src={profilepic}
                                 alt="Avatar placeholder"
+                                style={{marginBottom: 0, paddingBottom: 0, position: 'relative'}}
                             />
 
                             </span>
@@ -94,7 +95,11 @@ class Me extends Component {
               </div>
               </div>
             </div>
+
       </section>
+
+
+
     );
   }
 }
