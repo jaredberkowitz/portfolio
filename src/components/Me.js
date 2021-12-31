@@ -26,6 +26,7 @@ class Me extends Component {
             <span>{sectionName}</span>
           </h1>
           <div className="row center mx-auto mb-5">
+            <div className="col-md-12 mb-5 center">
                 <div className="card ">
                   <div className="card-header">
                     <span
@@ -50,13 +51,13 @@ class Me extends Component {
                     className="card-body font-trebuchet d-flex text-justify ml-3 mr-3 "
                     style={{
                       height: "auto",
-                      fontSize: "200%",
-                      lineHeight: "200%",
+                      fontSize: "1.4rem",
+                      lineHeight: "250%",
                     }}
                   >
                     <br />
 
-                        <div className="col-md-5 mt-5 ml-5">
+                        <div className="col-md-6 col-sm-6 mt-5 ml-1">
                         <div className="profileStyling">
                             <span style={{ cursor: "auto",  height:"auto"}}>
                             <img
@@ -69,10 +70,10 @@ class Me extends Component {
                         </div>
                         </div>    
     
-                        <ul className="mt-5 col-md-6 col-sm-5 col-xs-4 ">
+                        <ul className="mt-5 col-md-6 col-sm-6 col-xs-4 " style={{ maxwidth: "80%", overflowWrap: "break-word"}}>
                                 <li className="d-flex align-items-center"><i class="fas fa-gift display-4 text-success mr-3"style={{ fontSize: '24px' }}  ></i><span className={"text-success"}><h3>Birthday:   </h3></span><span><h3 className="ml-3"> 06.03.1996</h3></span></li>
                                 <li className="d-flex align-items-center text-truncate "><i class="fas fa-map-marker-alt display-4 text-success mr-3"style={{ fontSize: '24px' }}  ></i><span className={"text-success"}><h3>Location:   </h3></span><span><h3 className="ml-3"> Long Island, New York</h3></span></li>
-                                <li className="d-flex align-items-center text-truncate"><i class="fas fa-book-open display-4 text-success mr-3"style={{ fontSize: '24px' }}  ></i> <span className={"text-success"}><h3>Study:   </h3></span><span><h3 className="ml-3 text-align"> Computer Programming and Information Systems</h3></span></li>
+                                <li className="d-flex align-items-center"><i class="fas fa-book-open display-4 text-success mr-3"style={{ fontSize: '24px' }}  ></i> <span className={"text-success"}><h3>Study:   </h3></span><span><h3 className="ml-3 text-align" style={{overflow: "hidden"}}> Computer Programming and Information Systems</h3></span></li>
                                 <li className="d-flex align-items-center text-truncate"><i class="fas fa-envelope display-4 text-success mr-3"style={{ fontSize: '24px' }}  ></i><span className={"text-success"}><h3>Degree:   </h3></span><span><h3 className="ml-3"> Bachelor's</h3></span></li>
                                 <li className="d-flex align-items-center text-truncate"><i class="fas fa-phone-alt display-4 text-success mr-3"style={{ fontSize: '24px' }}  ></i> <span className={"text-success"}><h3>Cell Phone:   </h3></span><span><h3 className="ml-3">631-827-5359</h3></span></li>
                                 <li className="d-flex align-items-center text-truncate"><i class="fas fa-gift display-4 text-success mr-3"style={{ fontSize: '24px' }}  ></i> <span className={"text-success"}><h3>Email:   </h3></span><span><h3 className="ml-3"> jaredberkowitz2@gmail.com</h3></span></li>
@@ -90,6 +91,7 @@ class Me extends Component {
                     {about}
                   </div>
                 </div>
+              </div>
               </div>
             </div>
       </section>
