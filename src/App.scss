@@ -724,22 +724,56 @@ footer a:focus {
 
   //Me Card
 
-  .meCard {
-	display: inline-block;
-	margin: 0 auto 5% auto;
-	text-align: center;
-	text-decoration: none;
-	-webkit-box-shadow: 0 4px 6px rgba(0, 0, 0, .3);
-	-moz-box-shadow: 0 4px 6px rgba(0, 0, 0, .3);
-	box-shadow: 0 4px 6px rgba(0, 0, 0, .3);
-	-webkit-transition: all .20s linear;
-	-moz-transition: all .20s linear;
-	transition: all .20s linear;
-	z-index: 0;
+/*--------------------------------------------------------------
+# Resume
+--------------------------------------------------------------*/
+.meCard .meCard-title {
+	font-size: 26px;
+	font-weight: 700;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	color: #45505b;
+  }
+  .meCard .meCard-item {
+	padding: 0 0 20px 20px;
+	margin-top: -2px;
+	border-left: 2px solid #0563bb;
 	position: relative;
-}
-
-.meCard .card-header {
-
-}
-
+  }
+  .meCard .meCard-item h4 {
+	line-height: 18px;
+	font-size: 18px;
+	font-weight: 600;
+	text-transform: uppercase;
+	font-family: "Poppins", sans-serif;
+	color: #0563bb;
+	margin-bottom: 10px;
+  }
+  .meCard .meCard-item h5 {
+	font-size: 16px;
+	background: #f7f8f9;
+	padding: 5px 15px;
+	display: inline-block;
+	font-weight: 600;
+	margin-bottom: 10px;
+  }
+  .meCard .meCard-item ul {
+	padding-left: 20px;
+  }
+  .meCard .meCard-item ul li {
+	padding-bottom: 10px;
+  }
+  .meCard .meCard-item:last-child {
+	padding-bottom: 0;
+  }
+  .meCard .meCard-item::before {
+	content: "";
+	position: absolute;
+	width: 16px;
+	height: 16px;
+	border-radius: 50px;
+	left: -9px;
+	top: 0;
+	background: #fff;
+	border: 2px solid #0563bb;
+  }

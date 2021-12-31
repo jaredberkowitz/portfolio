@@ -22,8 +22,8 @@ class Me extends Component {
     return (
       <section id="about">
         <div className="col-md-12">
-          <h1 style={{ color: "black" }}>
-            <span>{sectionName}</span>
+          <h1 className="mb-5" style={{ color: "black" }}>
+            <span>Education</span>
           </h1>
           <div className="row center mx-auto mb-5">
             <div className="col-md-12 col-sm-12 mx-auto mb-5 center">
@@ -55,23 +55,9 @@ class Me extends Component {
                       lineHeight: "250%",
                     }}
                   >
-                    <br />
-
-                        <div className="col-md-5 col-sm-6 mt-5 ml-1 d-block">
-                        <div className="profileStyling">
-                            <span style={{ cursor: "auto",  height:"auto"}}>
-                            <img
-                                height="230px"
-                                src={profilepic}
-                                alt="Avatar placeholder"
-                                style={{marginBottom: 0, paddingBottom: 0, position: 'relative'}}
-                            />
-
-                            </span>
-                        </div>
-                        </div>    
+                    <br />   
     
-                        <ul className="mt-5 col-md-6 col-sm-6 col-xs-4 " style={{ maxwidth: "80%", overflowWrap: "break-word"}}>
+                    <ul className="mt-5 col-md-12 col-sm-6 col-xs-4 " style={{ maxwidth: "80%", overflowWrap: "break-word"}}>
                                 <li className="d-flex align-items-center"><i class="fas fa-gift display-4 text-success mr-3"style={{ fontSize: '24px' }}  ></i><span className={"text-success"}><h3>Birthday:   </h3></span><span><h3 className="ml-3"> 06.03.1996</h3></span></li>
                                 <li className="d-flex align-items-center text-truncate "><i class="fas fa-map-marker-alt display-4 text-success mr-3"style={{ fontSize: '24px' }}  ></i><span className={"text-success"}><h3>Location:   </h3></span><span><h3 className="ml-3"> Long Island, New York</h3></span></li>
                                 <li className="d-flex align-items-center"><i class="fas fa-book-open display-4 text-success mr-3"style={{ fontSize: '24px' }}  ></i> <span className={"text-success"}><h3>Study:   </h3></span><span><h3 className="ml-3 text-align" style={{overflow: "hidden"}}> Computer Programming and Information Systems</h3></span></li>
