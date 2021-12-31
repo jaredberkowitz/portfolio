@@ -26,7 +26,7 @@ class Me extends Component {
             <span>{sectionName}</span>
           </h1>
           <div className="row center mx-auto mb-5">
-            <div className="col-md-12 mb-5 center">
+            <div className="col-md-12 col-sm-12  mb-5 center">
                 <div className="card ">
                   <div className="card-header">
                     <span
@@ -57,7 +57,7 @@ class Me extends Component {
                   >
                     <br />
 
-                        <div className="col-md-6 col-sm-6 mt-5 ml-1">
+                        <div className="col-md-6 col-sm-6 mt-5 ml-1 d-block">
                         <div className="profileStyling">
                             <span style={{ cursor: "auto",  height:"auto"}}>
                             <img
