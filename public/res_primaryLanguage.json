@@ -1,7 +1,7 @@
 {
     "basic_info": {
-      "description_header": "Hi",
-      "description": "👋 I'm Jared Berkowitz. Student and Web Developer :) I'm working with front-end frameworks like Bootstrap, React and C# ASP.NET.",
+      "description_header": "Hello",
+      "description": "I'm Jared Berkowitz, Student and Web Developer looking to start a career in IT. I'm working with front-end frameworks like Bootstrap ad React.js to run this website! To contact me, navigate to the Contact page and fill out the form, and it will be sent to my personal email address.",
       "section_name": {
         "about": "About me",
         "projects": "Projects",
@@ -13,7 +13,7 @@
       {
         "title": "PanOpticon",
         "startDate": "2021",
-        "description": "Created in a 3 month period using C# ASP.NET, Bootstrap, SQL Server and a lot of coffee, PanOpticon is a productivity tool meant to give the user a wide range of features for productivity in a single website. The primary feeature was a calendar system with user-specific tasks, notes, and to-do lists, as well as more general news and weather feeds.",
+        "description": "Created in a 3 month period using C# ASP.NET, Bootstrap, and Microsoft SQL Server, PanOpticon is a productivity tool meant to give the user a wide range of features for productivity in a single website. The primary feeature was a calendar system with user-specific tasks, notes, and to-do lists, as well as more general news and weather feeds.",
         "images": [
           "images/portfolio/animal-shelter/p1.jpg",
           "images/portfolio/animal-shelter/p2.jpg"
