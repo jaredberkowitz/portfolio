@@ -4,6 +4,10 @@ import angularIcon from "@iconify/icons-logos/angular-icon";
 import reactIcon from "@iconify/icons-logos/react";
 import vueIcon from "@iconify/icons-logos/vue";
 import { Button } from "react-bootstrap"
+import Switch from "react-switch";
+import Nav from 'react-bootstrap/Nav'
+import { LinkContainer } from "react-router-bootstrap";
+
 
 
 class Me extends Component {
