@@ -4,6 +4,11 @@ import angularIcon from "@iconify/icons-logos/angular-icon";
 import reactIcon from "@iconify/icons-logos/react";
 import vueIcon from "@iconify/icons-logos/vue";
 import { Button } from "react-bootstrap"
+import Switch from "react-switch";
+import Nav from 'react-bootstrap/Nav'
+import { LinkContainer } from "react-router-bootstrap";
+import Pdf from '../../src/JaredBerkowitzResume.pdf';
+
 
 
 class Me extends Component {
@@ -66,7 +71,7 @@ class Me extends Component {
                                   <li className="d-flex align-items-center text-truncate"><i class="fas fa-gift display-4 text-success mr-3"style={{ fontSize: '24px' }}  ></i> <span className={"text-success"}><h3>Email:   </h3></span><span><h3 className="ml-3"> jaredberkowitz2@gmail.com</h3></span></li>
                                   
                                   <li className="d-flex align-items-center mt-5" >
-                                      <div className=" "><Button variant="success" size="xl" active className="btn draw-border col-md-12 col-sm-12 text-responsive" style={{fontSize: '17px'}}>Download CV</Button></div>
+                                      <div className=" "><Button variant="success" href={Pdf} size="xl" active className="btn draw-border col-md-12 col-sm-12 text-responsive" style={{fontSize: '17px'}}>Download CV</Button></div>
                                   </li>
                           </ul>  
 
