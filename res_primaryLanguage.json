@@ -1,7 +1,7 @@
 {
     "basic_info": {
-      "description_header": "Hi",
-      "description": "👋 I'm Jared Berkowitz. Student and Web Developer :) I'm working with front-end frameworks like Bootstrap, React and C# ASP.NET.",
+      "description_header": "Hello",
+      "description": "I'm Jared Berkowitz, a student and web developer looking to start a career in IT. I'm working with front-end frameworks like Bootstrap and React.js to create this site. If you feel inclined, please use the contact page to message me and it will be sent directly to my personal email address.",
       "section_name": {
         "about": "About me",
         "projects": "Projects",

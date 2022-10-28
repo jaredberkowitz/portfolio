@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "./static/css/main.e3e8c246.css",
-    "main.js": "./static/js/main.48594b34.js",
-    "static/media/JaredBerkowitzResume.pdf": "./static/media/JaredBerkowitzResume.ad52c5c2c4117e603957.pdf",
+    "main.js": "./static/js/main.fdc17cae.js",
+    "static/media/JaredBerkowitzResume.pdf": "./static/media/JaredBerkowitzResume.5c41c837411d4168d7aa.pdf",
     "index.html": "./index.html",
     "main.e3e8c246.css.map": "./static/css/main.e3e8c246.css.map",
-    "main.48594b34.js.map": "./static/js/main.48594b34.js.map"
+    "main.fdc17cae.js.map": "./static/js/main.fdc17cae.js.map"
   },
   "entrypoints": [
     "static/css/main.e3e8c246.css",
-    "static/js/main.48594b34.js"
+    "static/js/main.fdc17cae.js"
   ]
 }
